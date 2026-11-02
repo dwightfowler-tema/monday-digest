@@ -8,7 +8,7 @@ Addresses checked on 2026-11-02. "Feed" means an RSS or Atom feed, a machine-rea
 | # | Source | What to look for | How to fetch | Address |
 |---|---|---|---|---|
 | 1 | Andrej Karpathy's blog | New posts | Feed | https://karpathy.bearblog.dev/feed/ |
-| 2 | Forward Future newsletter | New issues and model reviews | Page (no feed exists) | https://forwardfuture.com/ and https://forwardfuture.com/newsletter/daily |
+| 2 | Forward Future newsletter | New daily issues, and new essays and model reviews ("originals") | Sitemap (no feed exists): a machine-readable list of the site's pages. Keep entries whose `<lastmod>` is after `last_run`, skip `/page/` and `/topic/` links, then open each kept link for its title and summary. Newest entries are near the top; if the fetched text ends before reaching an entry dated before `last_run`, fetch the rest (`start_index`) | https://forwardfuture.com/sitemaps/newsletter-daily.xml and https://forwardfuture.com/sitemaps/newsletter-originals.xml |
 | 3 | Anthropic engineering blog | New posts | Page (no feed exists) | https://www.anthropic.com/engineering |
 | 4 | OpenAI news | New engineering and product posts | Feed, then keep only engineering, research and developer items | https://openai.com/news/rss.xml |
 | 5 | GitHub Copilot changelog | New entries | Feed | https://github.blog/changelog/label/copilot/feed/ |
