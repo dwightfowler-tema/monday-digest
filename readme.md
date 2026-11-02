@@ -17,3 +17,4 @@
 | `state/last-run.json` | When the last run happened and what was already reported |
 | `digests/` | One dated digest per week |
 | `CLAUDE.md` | Points Claude at `DIGEST.md` |
+| `PLAN.md` | To-do list for changes to the project itself (not read during runs) |
