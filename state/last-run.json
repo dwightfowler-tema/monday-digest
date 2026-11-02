@@ -1,4 +1,23 @@
 {
-  "last_run": null,
-  "seen": []
+  "last_run": "2026-11-02T00:00:00-05:00",
+  "seen": [
+    "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+    "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md#2.1.316",
+    "https://karpathy.bearblog.dev/hacker-tube/",
+    "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+    "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+    "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+    "https://openai.com/index/updated-model-spec",
+    "https://www.cloudroom.dev/",
+    "https://www.youtube.com/watch?v=9tOu4r-FiQI",
+    "https://www.youtube.com/watch?v=F8rc-ULd4_4",
+    "https://www.youtube.com/watch?v=RHMsAm4ODDU",
+    "https://www.youtube.com/watch?v=wuv61uEq7uY",
+    "https://www.youtube.com/watch?v=DwoWIf8f2yQ",
+    "https://www.youtube.com/watch?v=YaK6cnET2IE",
+    "https://www.youtube.com/watch?v=2DmP5etgh4U",
+    "https://www.youtube.com/watch?v=FbKXvab-0yQ",
+    "https://www.youtube.com/watch?v=ZHOmBeMNbnc",
+    "https://www.youtube.com/watch?v=WeiB_gLOdQE"
+  ]
 }
