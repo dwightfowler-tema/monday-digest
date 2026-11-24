@@ -13,7 +13,7 @@
 |---|---|
 | `DIGEST.md` | Step-by-step instructions for each run |
 | `sources.md` | Sources and their feed or page addresses |
-| `.mcp.json` | The two MCP servers: `fetch` for feeds and pages, `youtube` for YouTube |
+| `.mcp.json` | The MCP server `fetch`, used for feeds and pages |
 | `state/last-run.json` | When the last run happened and what was already reported |
 | `digests/` | One dated digest per day |
 | `CLAUDE.md` | Points Claude at `DIGEST.md` |

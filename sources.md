@@ -14,13 +14,13 @@ Addresses checked on 2026-11-02. "Feed" means an RSS or Atom feed, a machine-rea
 | 5 | GitHub Copilot changelog | New entries | Feed | https://github.blog/changelog/label/copilot/feed/ |
 | 6 | Claude Code changelog | New releases newer than `claude_code_last_version` in `state/last-run.json` | Raw file; each `## x.y.z` heading is a release | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md |
 | 7 | Simon Willison's blog | New posts | Feed | https://simonwillison.net/atom/everything/ |
-| 8 | David Ondrej on GitHub | New commits and releases, including his public agent skills repo | Feed; fallback is the public API | https://github.com/davidondrej.atom, fallback https://api.github.com/users/davidondrej/events/public |
-| 9 | Cloudroom | New releases or posts | Page | https://www.cloudroom.dev/ |
-| 10 | David Ondrej on YouTube | New videos | Feed (YouTube's channel feed, with a publish date per video); fallback is the YouTube MCP server, `get_channel_videos`, which gives no dates | https://www.youtube.com/feeds/videos.xml?channel_id=UCPGrgwfbkjTIgPoOh2q1BAg (channel `@DavidOndrej`) |
+| 8 | Cloudroom | New releases or posts | Page | https://www.cloudroom.dev/ |
 
 ## Notes
 
 - **David Ondrej** founded Cloudroom, a vendor product. Treat his promotion of it accordingly.
 - **OpenAI**'s engineering-only page refuses automated requests (HTTP 403), so the general news feed is used and filtered.
 - **David Ondrej on X** was dropped on 2026-11-24: x.com's robots.txt forbids automated reading, so every run failed.
+- **David Ondrej on GitHub** was dropped on 2026-11-24: the fetch tool was refused on every run (github.com's robots.txt answers 403, and api.github.com is not an allowed host).
+- **David Ondrej on YouTube** was dropped on 2026-11-24: YouTube's robots.txt blocks the channel feed, and the YouTube tool could not read publish dates.
 - **LinkedIn** is excluded by decision. Sources that need a login are out of scope.

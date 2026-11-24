@@ -9,7 +9,6 @@ Reader: Dwight. Goal: one short daily digest of what changed in the sources in `
 1. **Read the state.** Open `state/last-run.json`. `last_run` is the date of the last successful run. `seen` lists item links already reported. `claude_code_last_version` is the newest Claude Code release already reported. If the file is missing or `last_run` is null, use 7 days ago as the start date.
 2. **Fetch each source** in `sources.md`, using the method listed there.
    - Feeds and pages: use the `fetch` MCP tool. Fall back to WebFetch or `curl` only if the MCP tool is unavailable, and note that in the digest's run notes.
-   - YouTube: fetch the channel's feed with the `fetch` MCP tool (address in `sources.md`). Each `<entry>` has a `<title>`, a link and a `<published>` date, so keep entries published after `last_run`. Only if the feed fails, use the `youtube` MCP tool `get_channel_videos` with `channel="@DavidOndrej"`, `sort="date"`, `limit=10`, and note in the run notes that dates may be missing.
    - Claude Code changelog: the file has no dates. Report every `## x.y.z` heading newer than `claude_code_last_version`. If the fetched text ends before reaching that version, fetch the rest with `start_index`.
    - Long feeds and pages: if the fetched text is cut off before reaching an item dated before `last_run`, fetch the rest with `start_index`.
    - Keep only items published after `last_run` and not in `seen`. For pages without dates, compare against `seen`.
