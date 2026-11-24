@@ -1,4 +1,4 @@
-# monday-digest
+# monday-digest (Daily Digest)
 
 When asked to "run my digest", follow `DIGEST.md` step by step. Sources and their addresses are in `sources.md`.
 
